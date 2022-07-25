@@ -1,0 +1,46 @@
+.sidebar {
+  /* Sidebar is taking 1 unit of the page. The remaining units are taken by other content */
+  flex: 1;
+  /* So that it doesn't overflow */
+  height: calc(100vh - 50px);
+  background-color: #eef8fa;
+  position: sticky;
+  top: 50px;
+}
+
+.sidebarWrapper {
+  padding: 20px;
+  color: #555;
+}
+
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+
+.sidebarTitle {
+  font-size: 13px;
+  color: #8a817c;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+
+.sidebarListItem {
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebarListItem:hover,
+.sidebarListItem:active {
+  background-color: rgb(240, 240, 255);
+}
+
+.sidebarIcon {
+  margin-right: 5px;
+  font-size: 20px !important;
+}
